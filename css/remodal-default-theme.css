@@ -1,0 +1,312 @@
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.5);
+}
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation: remodal-overlay-opening-keyframes 0.3s;
+  animation: remodal-overlay-opening-keyframes 0.3s;
+}
+
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation: remodal-overlay-closing-keyframes 0.3s;
+  animation: remodal-overlay-closing-keyframes 0.3s;
+}
+
+.remodal {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 99.2%;
+  padding: .8%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: rgb(246,246,247);
+  background: rgb(37, 48, 60);
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.remodal.remodal-is-opening {
+  -webkit-animation: remodal-opening-keyframes 0.3s;
+  animation: remodal-opening-keyframes 0.3s;
+}
+
+.remodal.remodal-is-closing {
+  -webkit-animation: remodal-closing-keyframes 0.3s;
+  animation: remodal-closing-keyframes 0.3s;
+}
+
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle;
+}
+
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.success, .fail {
+  color: white;
+}
+
+*[placeholder]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.1s ease;}
+*[placeholder]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.1s ease;}
+*[placeholder]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.1s ease;}
+*[placeholder]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.1s ease;}
+
+.putName, .putEmail {
+  color: #c8d4e2;
+  padding: 0 15px;
+  height: 40px;
+  outline: none;
+  border-radius: 1px;
+  margin-top: 30px;
+  margin-bottom: 17px;
+  width: 292px;
+  box-shadow: 0 0 .3px 0 #c8d4e2;
+  border: none;
+  background-color: rgb(37, 48, 60);
+}
+
+textarea {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 300px;
+  min-height: 50px;
+  padding: 11px;
+  margin-bottom: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  border-radius: 1px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 .3px 0 #c8d4e2;
+  color: #c8d4e2;
+  background-color: rgb(37, 48, 60);
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(37, 48, 60);
+  color: rgba(246, 246, 247, 0.8);
+  font-family: Raleway-ExtraBold;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 170px;
+  border-radius: 1px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 0 2px 0 #c8d4e2;
+}
+
+.btn:hover {
+  color: rgb(246, 246, 247);
+}
+
+@media only screen and (min-width: 440px) {
+  .remodal {
+    max-width: 420px;
+  }
+}
+
+@media only screen and (max-width: 439px) {
+  .remodal {
+    max-width: 100%;
+  }
+  .putName, .putEmail {
+    width: 90%;
+    height: 80px;
+    font-size: 22px;
+  }
+  .btn {
+    width: 96%;
+    height: 82px;
+    font-size: 22px;
+  }
+  #modal1Title {
+    font-size: 24px;
+  }
+}
+
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38;
+}
+
+.lt-ie9 .remodal {
+  width: 420px;
+}
+
+html.remodal-is-locked {
+  overflow: hidden;
+}
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+
+  display: none;
+}
+
+.remodal-wrapper {
+  padding: 10px;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  overflow: auto;
+
+  text-align: center;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.remodal-wrapper:after {
+  display: inline-block;
+
+  height: 100%;
+  margin-left: -0.05em;
+
+  content: "";
+}
+
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.remodal-is-initialized {
+  display: inline-block;
+}
