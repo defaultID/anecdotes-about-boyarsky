@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('body').append('<div class="button-up" style="display: none;opacity: 0.7;width: 32px;height:100%;position: fixed;left: 0px;top: 0px;cursor: pointer;text-align: center;line-height: 280px;"><img src="images/white-down-arrow-png-2-300x300.png" width="22"></div>');
+    $('body').append('<div class="button-up" style="display: none;opacity: 0.7;width: 32px;height:100%;position: fixed;left: 0px;top: 0px;cursor: pointer;text-align: center;line-height: 280px;"><img src="images/arrow.png" width="22"></div>');
 
     $ (window).scroll(function() {
         if ($(this).scrollTop () > 685) {

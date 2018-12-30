@@ -1,8 +1,4 @@
 @font-face {
-    font-family: "Raleway";
-    src: url(../fonts/Raleway-Regular.ttf);
-}
-@font-face {
     font-family: "Raleway-ExtraBold";
     src: url(../fonts/Raleway-ExtraBold.ttf);
 }
@@ -49,6 +45,7 @@ header {
     color: rgb(246,246,247);
 }
 
+
 .wrap {
     width: 1310px;
     text-align: center;
@@ -92,6 +89,7 @@ header {
     border-bottom: solid 1px rgb(80, 114, 153);
 }
 
+
 .wrapWall {
     display: inline-block;
     margin-bottom: 55px;
@@ -127,6 +125,7 @@ header {
     padding: 7px 10px;
     font-size: 15px;
 }
+
 
 .top {
     float: right;
@@ -224,6 +223,7 @@ header {
     font-weight: 600;
     font-size: 13px;
 }
+
 
 .smile {
     width: 165px;
