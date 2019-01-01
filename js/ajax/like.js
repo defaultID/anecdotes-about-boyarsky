@@ -13,12 +13,11 @@ $('.like').die('click').live("click",function() {
             if (rel === 'Like') {
                 setcookie(id,id,10);
                 $('.' + id).attr('rel', 'Unlike').attr('class', 'doneLike like ' + id);
-                $('.amount' + id).html(html);
             } else {
                 setcookie(id,id,-10);
                 $('.' + id).attr('rel', 'Like').attr('class', 'like ' + id);
-                $('.amount' + id).html(html);
             }
+            $('.amount' + id).html(html);
         }
     })
 });

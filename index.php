@@ -22,7 +22,7 @@ include_once "server/db.php";
     <script src="js/cookie.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/jquery.tmpl.js"></script>
-    <script src="js/list-news.js"></script>
+    <script src="js/ajax/wall.js"></script>
 </head>
 <body>
     <header>
