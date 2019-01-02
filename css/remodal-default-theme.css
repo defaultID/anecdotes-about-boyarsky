@@ -162,7 +162,8 @@
   }
 }
 
-.success, .fail {
+.response {
+  font-size: 17px;
   color: white;
 }
 

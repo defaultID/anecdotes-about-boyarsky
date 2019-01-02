@@ -1,8 +1,5 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-include_once "server/db.php";
+include_once "server/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -124,9 +121,9 @@ include_once "server/db.php";
 
     <div class="remodal" data-remodal-id="add" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
         <div>
-            <form id="form">
+            <form id="addForm">
                 <input type="text" class="putName" name="name" placeholder="Имя" required>
-                <textarea name="anecdote" rows="8" cols="48" placeholder="Анекдот" required></textarea>
+                <textarea name="message" rows="8" cols="48" placeholder="Анекдот" required></textarea>
                 <input type="submit" class="btn" name="submit" value="Отправить">
                 <input type="hidden" name="formData" value="Заявка с сайта">
             </form>
@@ -165,7 +162,7 @@ include_once "server/db.php";
 <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '3gz2'});</script>
 <script src="js/remodal.min.js"></script>
 <script src="js/ajax/like.js"></script>
-<script src="js/mail.js"></script>
+<script src="js/ajax/mail.js"></script>
 <script src="js/scroll-top.js"></script>
 <script>
     function noselect() {

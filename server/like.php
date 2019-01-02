@@ -1,5 +1,5 @@
 <?php
-include_once 'db.php';
+include_once 'config.php';
 if(isset($_POST['id']) && isset($_POST['rel'])) {
     $id=mysqli_real_escape_string($link, $_POST['id']);
     $rel=mysqli_real_escape_string($link,$_POST['rel']);

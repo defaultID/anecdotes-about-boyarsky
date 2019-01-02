@@ -1,12 +1,12 @@
 <?php
 require_once 'DbConnection.php';
-require_once 'ListNews.php';
+require_once 'Model.php';
 
 $db = new DbConnection();
-$model = new ListNews($db);
+$model = new Model($db);
 
-if (isset($_GET['listNewsOffset']) && is_numeric($_GET['listNewsOffset'])){
-    $offset = (int)$_GET['listNewsOffset'];
+if (isset($_GET['wallOffset']) && is_numeric($_GET['wallOffset'])){
+    $offset = (int)$_GET['wallOffset'];
 }
 
 $data = $model->getData($offset);

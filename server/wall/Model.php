@@ -1,6 +1,6 @@
 <?php
 
-class ListNews
+class Model
 {
 	protected $tableName = 'anecdotes_table';
 	protected $numLimit = 5; // Кол-во записей, которые мы подгружаем за 1 раз
@@ -32,7 +32,7 @@ class ListNews
     {
         for ($i = 0; $i < 10; $i++) {
             $time = time() - rand(1000, 30000);
-            $prepare = $this->db->getPdo()->prepare("INSERT INTO `{$this->tableName}` VALUES (null, 'Новость $i', 'Текст новости $i', 'Gleb', $time)");
+            $prepare = $this->db->getPdo()->prepare("INSERT INTO `{$this->tableName}` VALUES (null, 'Анекдот $i', 'Текст анекдота $i', 'Михаил', $time)");
 
             // Выполянем запрос к БД
             $prepare->execute();

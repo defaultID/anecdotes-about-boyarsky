@@ -1,12 +1,13 @@
 <?php
+include_once "../config.php";
 
 class DbConnection
 {
 	protected $driver = 'mysql';
-	protected $host = 'localhost';
-	protected $userName = 'root';
-	protected $password = '';
-	protected $dbName = 'f0144844_anecdotes_db';
+	protected $host = MYSQL_SERVER;
+	protected $userName = MYSQL_USER;
+	protected $password = MYSQL_PASSWORD;
+	protected $dbName = MYSQL_DB;
 	protected $charset = 'utf8';
 
 	/** @var null|PDO */
@@ -26,7 +27,7 @@ class DbConnection
 
 		$options = [
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Для отображения ошибок и исключений
-			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // ["name" => "Igor"]
+			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // ["name" => "Michael"]
 		];
 
 		try {
