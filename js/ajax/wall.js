@@ -1,6 +1,6 @@
 var wall = {
     startData: 0, //Начальная позиция выборки
-    selectorButton: '#wall-btn',
+    selectorButton: '#wallButton',
     flagLoadDataNow: false, //Началась ли загрузка данных с сервера
 
     run: function () {

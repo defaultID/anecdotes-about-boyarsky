@@ -82,7 +82,7 @@ include_once "server/config.php";
                         </div>
                 </script>
             </div>
-            <div id="list-news-btn">Показать ещё</div>
+            <div id="wallButton">Показать ещё</div>
         </div>
         <div class="top">
             <div class="headTop"><img src="images/zenit.png"></div>

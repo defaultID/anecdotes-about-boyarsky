@@ -4,10 +4,6 @@ include_once "../config.php";
 class DbConnection
 {
 	protected $driver = 'mysql';
-	protected $host = MYSQL_SERVER;
-	protected $userName = MYSQL_USER;
-	protected $password = MYSQL_PASSWORD;
-	protected $dbName = MYSQL_DB;
 	protected $charset = 'utf8';
 
 	/** @var null|PDO */
@@ -23,7 +19,7 @@ class DbConnection
 
 	function __construct()
 	{
-		$dsn = $this->driver . ':host=' . $this->host . ';dbname=' . $this->dbName . ';charset=' . $this->charset;
+		$dsn = $this->driver . ':host=' . MYSQL_SERVER . ';dbname=' . MYSQL_DB . ';charset=' . $this->charset;
 
 		$options = [
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Для отображения ошибок и исключений
@@ -31,7 +27,7 @@ class DbConnection
 		];
 
 		try {
-			$this->pdo = new PDO($dsn, $this->userName, $this->password, $options);
+			$this->pdo = new PDO($dsn, MYSQL_USER, MYSQL_PASSWORD, $options);
 		} catch (PDOException $PDOException) {
 			echo $PDOException->getMessage();
 			exit(1);
