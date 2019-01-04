@@ -39,7 +39,7 @@ include_once "server/config.php";
                     while ($row = mysqli_fetch_assoc($random)) { ?>
                         <div class="<?=($row['id']%2) ? 'red' : 'blue'?>">
                             <span class="aboutAnecdote">#<?=$row['id']?></span>
-                            <span class="aboutAnecdote"><?=time_format($row['date'])?></span>
+                            <span class="aboutAnecdote"><?=date_format(date_create_from_format('Y-m-d H:i:s', $row['date']), 'd.m.Y H:i')?></span>
                             <span class="aboutAnecdote"><?=$row['author']?></span>
                             <table class="tableLike">
                                 <tr class="trLike">
@@ -95,7 +95,7 @@ include_once "server/config.php";
                             <td class="numberTop"><div><?=$i?></div></td>
                             <td class="tdAnecdote">
                                 <span class="aboutAnecdote">#<?=$row['id']?></span>
-                                <span class="aboutAnecdote"><?=time_format($row['date'])?></span>
+                                <span class="aboutAnecdote"><?=date_format(date_create_from_format('Y-m-d H:i:s', $row['date']), 'd.m.Y H:i')?></span>
                                 <span class="aboutAnecdote"><?=$row['author']?></span>
                                 <table class="tableLike">
                                     <tr class="trLike">
