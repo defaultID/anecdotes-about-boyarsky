@@ -23,7 +23,7 @@ class DbConnection
 
 		$options = [
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Для отображения ошибок и исключений
-			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // ["name" => "Michael"]
+			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // ["name" => "Михаил"]
 		];
 
 		try {
