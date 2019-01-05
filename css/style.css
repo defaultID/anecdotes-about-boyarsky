@@ -36,7 +36,7 @@ header {
     font-size: 11px;
     font-family: Raleway-ExtraBold;
     text-transform: uppercase;
-    padding: 6px 33px;
+    padding: 6px 35px;
     text-decoration: none;
     border-bottom: 2px solid #90bdd7;
     color: rgba(246,246,247, 0.8);
@@ -48,6 +48,7 @@ header {
 
 .wrap {
     width: 1310px;
+    margin: 0 auto;
     text-align: center;
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
     color: #c8d4e2;
@@ -182,6 +183,20 @@ header {
 }
 .blue > td {
     border-bottom: solid 1px rgb(80, 114, 153);
+}
+footer {
+    text-align: left;
+    padding: 7px 17px;
+}
+footer a {
+    color: inherit;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 8px;
+}
+footer a:hover {
+    text-decoration: underline;
 }
 
 

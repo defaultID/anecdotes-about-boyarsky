@@ -113,8 +113,11 @@ include_once "server/config.php";
                     <?php } ?>
                 </table>
             </div>
-            <a href="#donate">Поддержать сайт</a>
-            <a href="#feedback">Обратная связь</a>
+            <footer>
+                <a href="#feedback">Обратная связь</a>
+                <a href="#donate">Поддержать сайт</a>
+                <a href="https://github.com/defaultID/workarea" target="_blank">GitHub</a>
+            </footer>
         </div>
         <img class="smile" src="images/smile.png">
     </div>
