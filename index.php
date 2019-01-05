@@ -26,8 +26,6 @@ include_once "server/config.php";
         <div class="logo">
             <a href="/"><img src="images/logo.png"></a>
             <a class="addAnecdote" href="#add">Добавить анекдот</a>
-            <a href="#donate">Поддержать сайт</a>
-            <a href="#feedback">Обратная связь</a>
         </div>
     </header>
     <div class="wrap">
@@ -89,7 +87,7 @@ include_once "server/config.php";
             <div class="contentTop">
                 <table class="tableTop">
                     <?php
-                    $top10 = mysqli_query($link,"SELECT * FROM `anecdotes_table` ORDER BY  `anecdotes_table`.`like` DESC LIMIT 0,5");
+                    $top10 = mysqli_query($link,"SELECT * FROM `anecdotes_table` ORDER BY `anecdotes_table`.`like` DESC LIMIT 0,5");
                     for ($i = 1; $row = mysqli_fetch_assoc($top10); $i++) { ?>
                         <tr class="<?=($i%2) ? 'blue' : 'red'?>">
                             <td class="numberTop"><div><?=$i?></div></td>
@@ -115,6 +113,8 @@ include_once "server/config.php";
                     <?php } ?>
                 </table>
             </div>
+            <a href="#donate">Поддержать сайт</a>
+            <a href="#feedback">Обратная связь</a>
         </div>
         <img class="smile" src="images/smile.png">
     </div>

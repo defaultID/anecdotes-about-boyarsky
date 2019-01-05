@@ -18,7 +18,7 @@ class Model
     public function getData($offset)
     {
         $prepare = $this->db->getPdo()->prepare(
-            "SELECT * FROM `{$this->tableName}` ORDER BY  `$this->tableName`.`id` DESC  LIMIT :offsetParam, :limitParam");
+            "SELECT * FROM `{$this->tableName}` ORDER BY `$this->tableName`.`id` DESC LIMIT :offsetParam, :limitParam");
         $prepare->bindValue(':offsetParam', ($offset === null) ? $this->offset : $offset, PDO::PARAM_INT);
         $prepare->bindValue(':limitParam', $this->numLimit, PDO::PARAM_INT);
         $prepare->execute();
@@ -33,7 +33,6 @@ class Model
         for ($i = 0; $i < 10; $i++) {
             $time = time() - rand(1000, 30000);
             $prepare = $this->db->getPdo()->prepare("INSERT INTO `{$this->tableName}` VALUES (null, 'Анекдот $i', 'Текст анекдота $i', 'Михаил', $time)");
-
             // Выполянем запрос к БД
             $prepare->execute();
         };

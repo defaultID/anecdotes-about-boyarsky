@@ -7,7 +7,6 @@ var wall = {
         this.onLoadData();
         $(this.selectorButton).on('click', this.onLoadData.bind(this));
     },
-
     /**
      * Метод подгрузки данных с сервера
      */
@@ -63,7 +62,6 @@ var wall = {
             }
         });
     },
-
     /**
      * Метод реализует автоматическую подгрузку данных при прокрутке ленты
      */
