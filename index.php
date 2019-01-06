@@ -23,12 +23,12 @@ include_once "server/config.php";
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="headline">
             <a href="/"><img src="images/logo.png"></a>
             <a class="addAnecdote" href="#add">Добавить анекдот</a>
         </div>
     </header>
-    <div class="wrap">
+    <main>
         <div class="random">
             <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
                 <div id="vmarquee">
@@ -120,30 +120,26 @@ include_once "server/config.php";
             </footer>
         </div>
         <img class="smile" src="images/smile.png">
-    </div>
+    </main>
 
-    <div class="remodal" data-remodal-id="add" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-        <div>
-            <form id="addForm">
-                <input type="text" class="putName" name="name" placeholder="Имя" required>
-                <textarea name="message" rows="8" cols="48" placeholder="Анекдот" required></textarea>
-                <input type="submit" class="btn" name="submit" value="Отправить">
-                <input type="hidden" name="formData" value="Заявка с сайта">
-            </form>
-        </div>
+    <div class="remodal" data-remodal-id="add" role="dialog">
+        <form id="addForm">
+            <input type="text" class="putName" name="name" placeholder="Имя" required>
+            <textarea name="userMessage" rows="8" cols="48" placeholder="Анекдот" required></textarea>
+            <input type="submit" class="btn" value="Отправить">
+            <input type="hidden" name="formData" value="Заявка с сайта">
+        </form>
     </div>
-    <div class="remodal" data-remodal-id="feedback" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-        <div>
-            <form id="feedForm">
-                <input type="text" class="putName" name="name" placeholder="Имя" required>
-                <input type="text" class="putEmail" style="margin-top: 0;" name="email" placeholder="Email">
-                <textarea name="message" rows="8" cols="48" placeholder="Сообщение" required></textarea>
-                <input type="submit" class="btn" name="submit" value="Отправить">
-                <input type="hidden" name="formData" value="Сообщение с сайта">
-            </form>
-        </div>
+    <div class="remodal" data-remodal-id="feedback" role="dialog">
+        <form id="feedForm">
+            <input type="text" class="putName" name="name" placeholder="Имя" required>
+            <input type="text" class="putEmail" name="email" placeholder="Email">
+            <textarea name="userMessage" rows="8" cols="48" placeholder="Сообщение" required></textarea>
+            <input type="submit" class="btn" value="Отправить">
+            <input type="hidden" name="formData" value="Сообщение с сайта">
+        </form>
     </div>
-    <div class="remodal" style="width: 429px; max-width: 429px; height: 175px; padding: 8px; border-radius: 11px; margin-bottom: 40px;" data-remodal-id="donate" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+    <div class="remodal donate" data-remodal-id="donate" role="dialog">
         <form id="donateForm">
             <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=410015275771859&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE+%D0%B7%D0%B0+%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D1%83!&target-visibility=on&project-name=&project-site=&button-text=03&comment=on&hint=%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5+(%D0%B2%D0%B0%D1%88%D0%B5+%D0%B8%D0%BC%D1%8F)&successURL=" width="411" height="160"></iframe>
         </form>
