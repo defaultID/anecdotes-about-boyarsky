@@ -178,12 +178,6 @@ main {
 .tdAnecdote table {
     margin-top: -3px;
 }
-.red > td {
-    border-bottom: solid 1px rgb(117, 58, 0);
-}
-.blue > td {
-    border-bottom: solid 1px rgb(80, 114, 153);
-}
 footer {
     text-align: left;
     padding: 8px 17px;

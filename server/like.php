@@ -2,7 +2,7 @@
 include_once 'config.php';
 if(isset($_POST['id']) && isset($_POST['rel'])) {
     $id = mysqli_real_escape_string($link, $_POST['id']);
-    $rel = mysqli_real_escape_string($link,$_POST['rel']);
+    $rel = mysqli_real_escape_string($link, $_POST['rel']);
     if($rel == 'Like') {
         mysqli_query($link,"UPDATE `anecdotes_table` SET `like` = `like`+1 WHERE `anecdotes_table`.`id` = '$id'");
     } else {
