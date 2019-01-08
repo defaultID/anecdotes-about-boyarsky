@@ -83,7 +83,7 @@ include_once "server/config.php";
             <div id="wallButton">Показать ещё</div>
         </div>
         <div class="top">
-            <div class="headTop"><img src="images/zenit.png"></div>
+            <img class="imageTop" src="images/zenit.png">
             <div class="contentTop">
                 <table class="tableTop">
                     <?php
