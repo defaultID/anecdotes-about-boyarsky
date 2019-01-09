@@ -173,6 +173,7 @@
 *[placeholder]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.1s ease;}
 
 .putName, .putEmail {
+  font-size: 13px;
   color: #c8d4e2;
   padding: 0 15px;
   height: 40px;
@@ -180,7 +181,7 @@
   border-radius: 1px;
   margin-top: 30px;
   margin-bottom: 17px;
-  width: 292px;
+  width: 74%;
   box-shadow: 0 0 .3px 0 #c8d4e2;
   border: none;
   background-color: rgb(37, 48, 60);
@@ -190,11 +191,11 @@
 }
 
 textarea {
-  max-width: 300px;
-  min-width: 300px;
+  min-width: 74%;
+  max-width: 74%;
   max-height: 300px;
-  min-height: 50px;
-  padding: 11px;
+  min-height: 140px;
+  padding: 12px 15px;
   margin-bottom: 17px;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -221,38 +222,20 @@ textarea {
   border: none;
   box-shadow: 0 0 2px 0 #c8d4e2;
 }
-
 .btn:hover {
   color: rgb(246, 246, 247);
 }
+
 .donate {
-    width: 429px;
-    max-width: 429px;
-    height: 175px;
-    padding: 8px;
-    border-radius: 11px;
-    margin-bottom: 40px;
+  padding: 0;
+  box-shadow: none;
+  background: none;
+
 }
 
 @media only screen and (min-width: 440px) {
   .remodal {
     max-width: 420px;
-  }
-}
-
-@media only screen and (max-width: 439px) {
-  .remodal {
-    max-width: 100%;
-  }
-  .putName, .putEmail {
-    width: 90%;
-    height: 80px;
-    font-size: 22px;
-  }
-  .btn {
-    width: 96%;
-    height: 82px;
-    font-size: 22px;
   }
 }
 

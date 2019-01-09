@@ -47,7 +47,7 @@ header {
 
 
 main {
-    max-width: 1310px;
+    max-width: 1366px;
     margin: 0 auto;
     text-align: center;
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
@@ -92,20 +92,20 @@ main {
 
 
 .wrapWall {
-    width: 42%;
+    width: 41%;
     display: inline-block;
+    margin-top: 16px;
     margin-bottom: 55px;
 }
 #wall {
     display: inline-block;
-    margin-top: 8px;
-    margin-bottom: 13px;
+    margin: 8px 15px 13px;
     font-size: 13px;
 }
 #wall div {
     padding: 0.7em 1.2em;
     text-align: left;
-    margin: 15px;
+    margin-bottom: 15px;
     border-radius: 2px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42);
 }
@@ -115,9 +115,8 @@ main {
     margin: 7px 0 10px 10px;
 }
 #wall .titleAnecdoteWall {
-    margin: 5px 10px 10px 10px;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 14px;
     opacity: 1;
 }
 #wallButton {
@@ -130,7 +129,7 @@ main {
 
 .top {
     float: right;
-    width: 28%;
+    width: 29%;
     display: inline-block;
     margin-top: 27px;
 }
@@ -141,7 +140,7 @@ main {
 }
 .contentTop {
     border-radius: 2px;
-    margin-top: 6px;
+    margin-top: 4px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42);
 }
 .tableTop {
@@ -164,14 +163,14 @@ main {
     vertical-align: top;
 }
 .numberTop div {
-    margin-top: 36px;
+    margin-top: 38px;
     width: 19px;
     height: 15px;
     border: 1px #2f3847 solid;
     background: #2f3847;
 }
 .tdAnecdote {
-    padding: 12px 10px 13px 3px;
+    padding: 14px 13px 14px 2px;
 }
 .tdAnecdote table {
     margin-top: -3px;
@@ -207,12 +206,12 @@ footer a:hover {
     background-color: #2f3847;
 }
 .imageLike {
-    width: 20px;
+    width: 21px;
     padding: 0;
     cursor: pointer;
 }
 .like {
-    width: 20px;
+    width: 21px;
     opacity: 0.4;
     float: right;
 }
@@ -272,37 +271,30 @@ footer a:hover {
         display: none;
     }
     .wrapWall {
-        width: 45%;
+        width: 47%;
         margin-right: 3%;
-    }
-    #wall .titleAnecdoteWall {
-        line-height: 19px;
-        font-size: 14px;
+        margin-top: 54px;
     }
     .top {
         float: none;
         vertical-align: top;
-        width: 42%;
-    }
-    .tableTop p {
-        line-height: 19px;
-        font-size: 14px;
+        width: 41%;
+        margin-top: 15px;
     }
     .aboutAnecdote {
         font-size: 13px;
     }
+    #wall .titleAnecdoteWall, .tableTop p {
+        line-height: 19px;
+        font-size: 14px;
+    }
 }
-
 @media screen and (max-width: 800px) {
-    body .buttonUp {
+    .buttonUp {
         display: none!important;
     }
-    .random {
-        display: none;
-    }
-    .wrapWall {
-        width: 99%;
-        margin-right: 0;
+    .headline img {
+        width: 80px;
     }
     .addAnecdote {
         margin-right: 7%;
@@ -310,26 +302,38 @@ footer a:hover {
         font-size: 10px;
         margin-top: 8px;
     }
+    .random, .top {
+        display: none;
+    }
+    .wrapWall {
+        width: 99%;
+        margin-right: 0;
+        margin-top: 43px;
+    }
     #wall {
         font-size: 11px;
     }
-    #wall p {
-        margin: 6px 0 7px 6px;
+    .tableLikeWall {
+        width: 55px;
+        margin: 3px 0;
     }
-    .headline img {
-        width: 80px;
+    .imageLike, .like {
+        width: 19px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .wrapWall {
+        width: 100%;
+    }
+    #wall .titleAnecdoteWall {
+        line-height: 18px;
+        font-size: 13px;
     }
     .tableLikeWall {
         width: 50px;
-        margin: 2px 0 0 0;
     }
-    .imageLike {
-        width: 19px;
-    }
-    .like {
-        width: 19px;
-    }
-    .top {
-        display: none;
+    #wallButton {
+        display: inline-block;
+        width: 89%;
     }
 }

@@ -17,8 +17,7 @@ class Model
 
     public function getData($offset)
     {
-        $prepare = $this->db->getPdo()->prepare(
-            "SELECT * FROM `$this->tableName` ORDER BY `$this->tableName`.`id` DESC LIMIT :offsetParam, :limitParam");
+        $prepare = $this->db->getPdo()->prepare("SELECT * FROM `$this->tableName` ORDER BY `$this->tableName`.`id` DESC LIMIT :offsetParam, :limitParam");
         $prepare->bindValue(':offsetParam', ($offset === null) ? $this->offset : $offset, PDO::PARAM_INT);
         $prepare->bindValue(':limitParam', $this->numLimit, PDO::PARAM_INT);
         $prepare->execute();

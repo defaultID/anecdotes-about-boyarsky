@@ -8,6 +8,7 @@ include_once "server/config.php";
     <meta name="google-site-verification" content="XDfYdka3n9Ijgx_0TwBkig7bDw_Yxgk2iU0gkTHfxuE" />
     <meta name="yandex-verification" content="8c99182399d388b7" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Анекдоты про Боярского">
     <title>Анекдоты про Боярского</title>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -116,7 +117,7 @@ include_once "server/config.php";
             <footer>
                 <a href="#feedback">Обратная связь</a>
                 <a href="#donate">Поддержать сайт</a>
-                <a href="https://github.com/defaultID/workarea" target="_blank">GitHub</a>
+                <a href="https://github.com/defaultID/anecdotes-about-boyarsky" target="_blank">GitHub</a>
             </footer>
         </div>
         <img class="smile" src="images/smile.png">
@@ -125,7 +126,7 @@ include_once "server/config.php";
     <div class="remodal" data-remodal-id="add" role="dialog">
         <form id="addForm">
             <input type="text" class="putName" name="name" placeholder="Имя" required>
-            <textarea name="userMessage" rows="8" cols="48" placeholder="Анекдот" required></textarea>
+            <textarea name="userMessage" placeholder="Анекдот" required></textarea>
             <input type="submit" class="btn" value="Отправить">
             <input type="hidden" name="formData" value="Заявка с сайта">
         </form>
@@ -140,9 +141,7 @@ include_once "server/config.php";
         </form>
     </div>
     <div class="remodal donate" data-remodal-id="donate" role="dialog">
-        <form id="donateForm">
-            <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=410015275771859&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE+%D0%B7%D0%B0+%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D1%83!&target-visibility=on&project-name=&project-site=&button-text=03&comment=on&hint=%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5+(%D0%B2%D0%B0%D1%88%D0%B5+%D0%B8%D0%BC%D1%8F)&successURL=" width="411" height="160"></iframe>
-        </form>
+        <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D1%83!&targets-hint=&default-sum=50&button-text=11&payment-type-choice=on&comment=on&hint=&successURL=&quickpay=shop&account=410015275771859" width="100%" height="301" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
     </div>
 
 <span style="display: none;"><!--LiveInternet counter-->
